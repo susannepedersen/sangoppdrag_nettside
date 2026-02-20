@@ -44,21 +44,6 @@ header h1 {
   padding: 2rem;
 }
 
-
-/*.hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("assets/images/sang_bilde3.jpg");
-  background-size:60%;   /* gjør bildet “større” enn container → zoom ut-effekt 
-  background-position: top right 25%;  /* flytter fokus mot høyre 
-  background-repeat: no-repeat;
-  z-index: 0;
-  filter: brightness(0.9); /* litt mørkere, som gradient 
-}
-
 /* Tekst over bildet */
 .hero-content {
   position: absolute;
@@ -119,8 +104,41 @@ main {
   padding: 2rem 1.5rem;
 }
 
+.main-nav {
+  position: fixed;  /* gjør den “sticky” */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #816d5b;
+  padding: 10px 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  color: #333;  /* litt farge for hover */
+}
+
 section {
   margin-bottom: 3rem;
+  scroll-margin-top: 70px;
 }
 
 .repertoar-section {
